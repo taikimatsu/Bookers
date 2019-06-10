@@ -1,0 +1,56 @@
+<header>
+	<h1 class="index-headline">Books</h1>
+</header><!-- /header -->
+<table class="table-box">
+	<thead class="table-head">
+		<tr>
+	    	<th class="table-headline">Title</th>
+		    <th class="table-headline">Body</th>
+		    <th class="table-headline"></th>
+		    <th></th>
+		    <th></th>
+	    </tr>
+	</thead>
+	<tbody class="table-body">
+		<% @books.each do |book| %>
+		　　<tr>
+			  <td class="title-contents"><%= book.title %></td>
+			  <td class="body-contents"><%= book.body %></td>
+			　<td class="table-contents">
+				<div class="botan clearfix">
+					<%= link_to "Show", book_path(book.id) %>
+				</div>
+			  </td>
+			  <td>
+				<div class="botan clearfix">
+					<%= link_to "Edit", edit_book_path(book.id) %>
+				</div>
+			  </td>
+			  <td>
+				<div class="botan clearfix">
+					<%= link_to "Destroy", book_path(book.id), method: :delete,"data-confirm" => "Are you sure?" %>
+				</div>
+			  </td>
+
+		    </tr>
+        <% end %>
+	</tbody>
+</table>
+
+<h2 class="index-newbook">New book</h2>
+
+<%= form_for(@book) do |f| %>
+
+    <div class="field">
+     	<h4 class="writebox">Title</h4>
+        <%= f.text_field :title %>
+    </div>
+    <div class="field">
+    	<h4 class="writebox">Body</h4>
+        <%= f.text_area :body %>
+    </div>
+    <div class="field">
+     <%= f.submit "Create Book" %>
+    </div>
+<% end %>
+</html>

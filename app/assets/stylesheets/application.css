@@ -1,0 +1,145 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+.clearfix::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+/*top*/
+.top-headline{
+	margin: 25px 0px 0px 35px;
+	color: black;
+	font-size: 26px;
+}
+strong{
+	color: black;
+}
+.top-contents{
+	margin: 20px 0px 30px 70px;
+	font-size: 13px;
+}
+/*index*/
+.index-headline{
+	margin: 25px 0px 0px 35px;
+	color: black;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 18px;
+}
+.table-box{
+	margin-left: 35px;
+}
+.table-headline{
+	color: black;
+	font-weight: bold;
+	font-size: 13px;
+	padding-bottom: 3px;
+
+}
+td{
+	padding-bottom: 7px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 13px;
+	line-height: 18px;
+	color: black;
+}
+.table-contents{
+	font-weight: bold;
+	color: black;
+}
+.botan{
+	margin-right: 8px;
+	display: inline-block;
+}
+.writebox{
+	margin: 25px 0px 0px 0px;
+	color: black;
+	font-size: 13px;
+	line-height: 18px;
+}
+.index-newbook{
+	margin: 25px 0px 0px 35px;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 18px;
+}
+.field{
+	margin-left: 35px;
+}
+/*show*/
+.message{
+	margin-top: 32px;
+	margin-left: 68px;
+	font-size: 13px;
+}
+.green{
+	color: green;
+}
+.show-box{
+	margin-top: 32px;
+	margin-left: 68px;
+}
+.show-contents{
+	font-size: 13px;
+	margin-bottom: 6px;
+}
+.showcontents{
+	font-size: 13px;
+	display: inline-block;
+	margin-left: 3px;
+	margin-bottom: 30px;
+}
+.botan-box{
+	margin-left: 30px;
+}
+.edit{
+	display: inline-block;
+	font-size: 13px;
+	color: black;
+}
+/*edit*/
+.edit-box{
+	margin-top: 26px;
+	margin-left: 33px;
+}
+.edit-title{
+	font-size: 24px;
+	color: black;
+	margin-bottom: 10px;
+}
+.edit-field{
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+.edit-botan{
+	display: inline-block;
+	font-size: 13px;
+}
+
+
+
+
+

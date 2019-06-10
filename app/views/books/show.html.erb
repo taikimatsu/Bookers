@@ -1,0 +1,31 @@
+<div class="message">
+<% if flash[:notice] %>
+  <p class="green"><%= flash[:notice] %></p>
+<% end %>
+</div>
+<div class="show-box">
+    <div class="show-contents">
+		<strong>Title:</strong>
+		<p class="showcontents">
+			<%= @book.title %>
+		</p>
+    </div>
+	<div class="show-contents">
+		<strong>Body:</strong>
+		<p class="showcontents">
+			<%= @book.body %>
+		</p>
+	</div>
+</div>
+<div class="botan-box">
+	<div class="edit">
+		<strong><%= link_to "Edit", edit_book_path(@book) %>
+		</strong>
+	</div>
+	<div class="edit">
+		<p> | </p>
+	</div>
+	<div class="edit">
+		<%= link_to "Back", books_path %>
+	</div>
+</div>
